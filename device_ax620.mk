@@ -7,7 +7,9 @@ $(call inherit-product-if-exists, vendor/bmobile/ax620/ax620-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/bmobile/ax620/overlay
 
-LOCAL_PATH := device/bmobile/ax620
+LOCAL_PATH := device/bmobile/ax620/prebuilt
+
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
